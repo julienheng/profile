@@ -1,0 +1,116 @@
+@media only screen and (min-width: 1024px){
+	.container {
+    width: 50px
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.container {
+    width: 50px
+	}
+}
+
+body {
+    background-image: url(images/music2.jpg);
+    background-repeat: no-repeat;
+    background-image: linear-gradient;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: lora;
+  font-weight: bold;
+  margin: 20px;
+  color: orangered
+}
+
+
+body {
+font-family: 'Lora', serif;
+width: 100vw;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid black;
+  text-align: center;
+  margin: 20px 200px;
+  padding: 40px
+}
+
+.card2 {
+  margin: 40px 200px;
+  padding: 20px;
+  opacity: 1;
+
+  text-align: center;
+
+}
+
+.avatar {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%
+
+}
+
+div > p {
+  margin-bottom: 30px
+}
+
+.list {
+  padding: 0;
+}
+
+.button {
+  font-size: 25px;
+  color: white;
+  background-color: #019bf7;
+  border: 2px solid #019bf7;
+  border-radius: 20px;
+  padding: 1.2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-weight: bolder;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.social-media {
+  margin: 5px;
+  font-weight: bolder;
+  font-size:large;
+  color: pink
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 40vw;
+  margin: 0 auto;
+}
+
+li {
+  margin: 5px;
+}
+
+#github {
+  color: brown
+}
+
+#instagram {
+  color: purple
+}
+
+#linkedin {
+  color: blue;
+}
