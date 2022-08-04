@@ -1,17 +1,40 @@
-@media only screen and (min-width: 1024px){
-	.container {
-    width: 50px
-	}
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
 }
 
-@media only screen and (max-width: 1024px){
-	.container {
-    width: 50px
-	}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 200px;
+  }
+}
+
+@keyframes intro {
+  0% { opacity: 0; transform: scale(0) rotate(9999deg); }
+  60% { opacity: 1; transform: scale(1.5) rotate(0deg); }
+  100%{ opacity: 1; transform: scale(1); }
+}
+
+@keyframes myfirst {
+  0%   {background-color:rgba(255, 0, 0, 0.5);}
+  25%  {background-color:rgba(255, 255, 0, 0.5);}
+  50%  {background-color:rgba(0, 0, 255, 0.5);}
+  75%  {background-color:rgba(0, 255, 0, 0.5);}
+  100% {background-color:rgba(255, 0, 0, 0.5);}
 }
 
 body {
-    background-image: url(images/music2.jpg);
+    background-image: url(images/bolivia.jpg);
     background-repeat: no-repeat;
     background-image: linear-gradient;
     background-size: cover;
@@ -20,15 +43,21 @@ body {
 
 h1 {
   font-size: 50px;
-  font-family: lora;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
   font-weight: bold;
-  margin: 20px;
-  color: orangered
+  margin: 10px;
+  color: #bb3e03
 }
 
+h3 {
+  margin: 5px;
+  font-weight: 600;
+  font-size: 28px;
+  color: black
+}
 
 body {
-font-family: 'Lora', serif;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
 width: 100vw;
 }
 
@@ -40,28 +69,31 @@ width: 100vw;
 .card {
   background-color: rgba(255, 255, 255, 0.602);
   text-align: center;
-  margin: 20px 200px;
-  padding: 40px;
+  margin: 30px 280px;
+  padding: 30px;
+  border-radius: 5px
 }
 
-.test {
-
-}
 
 .card2 {
-  margin: 40px 200px;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  margin: 40px 280px;
   padding: 20px;
   opacity: 1;
-
   text-align: center;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.602);
+}
 
+.avatar:hover{
+  transform: rotate(1000deg)
 }
 
 .avatar {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%
-
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  transition: 2s
 }
 
 div > p {
@@ -73,24 +105,34 @@ div > p {
 }
 
 .button {
-  font-size: 25px;
-  color: white;
-  background-color: #019bf7;
-  border: 2px solid #019bf7;
-  border-radius: 20px;
-  padding: 1.2%;
-  padding-left: 4%;
-  padding-right: 4%;
-  font-weight: bolder;
-  text-decoration: none;
-  display: inline-block;
-}
+    margin: 20px, 20px;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 15px 30px;
+    background-color: rgba(255, 0, 0, 0.5);
+    animation: myfirst 5s linear 2s infinite alternate;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: 500ms;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    color: black;
+  }
+
 
 .social-media {
-  margin: 5px;
+  margin: 0px;
   font-weight: bolder;
-  font-size:large;
-  color: pink
+  font-size: 40px;
+  color: #bb3e03
+
+}
+.social-media-2 {
+  font-size: 15px;
+  color: #bb3e03;
+  margin: 0px
 }
 
 ul {
@@ -111,7 +153,7 @@ li {
 }
 
 #instagram {
-  color: purple
+  color: palevioletred
 }
 
 #linkedin {
